@@ -176,9 +176,9 @@ body {
   
 }
 
-.ad1 {
+.ad1, .ad2, .ad3{
   width: 80%;
-  height: 300px;
+  height: 150px;
   background: $fontgray;
   margin: 0 auto;
   margin-top:30px ;
@@ -237,7 +237,7 @@ body {
   }
 }
 
-.latest-title {
+.latest-title, .deals-title {
   display: flex;
   width:80%;
   height: 30px;
@@ -414,3 +414,51 @@ body {
   }
   }
 }
+
+.article-list {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    li {
+        font-size: 13px;
+        color: #555;
+        border-bottom: 1px solid lightgrey;
+        padding-top: 10px ;
+        padding-bottom: 10px;
+    }
+    ul {
+        list-style: circle;
+        margin-left: 10px;
+    }
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+}
+
+.footer-icons {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background: #131313;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container {
+    width: 50px;
+    height: 50px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 25px;
+    margin-right: 20px;
+    color: white;
+}
+
