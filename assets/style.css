@@ -888,5 +888,292 @@ main {
     color: #b3b3b3;
     padding-top: 10px;
   }
+  .latest-funding {
+    width: 95%;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 1022px;
+  }
+  .lf-container {
+    width: 33%;
+    height: 270px;
+    padding: 10px;
+  }
+  .lf-container img {
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .lf-container h1 {
+    font-size: 18px;
+    color: white;
+    background: #ff4422;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .lf-container h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    background: #FFEBE8;
+    line-height: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+  .lf-container h2 span {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #b3b3b3;
+    cursor: pointer;
+  }
+  .lf-container h3 {
+    cursor: pointer;
+    font-size: 13px;
+    color: #555;
+    background: #FFF9F8;
+    line-height: 20px;
+    padding: 15px;
+    padding-top: 30px;
+    border-bottom: 1px solid #ff4422;
+  }
+  .lf-container p {
+    font-size: 12px;
+    background: #FFF9F8;
+    padding: 15px;
+    padding-top: 30px;
+    color: #555;
+    line-height: 20px;
+    cursor: pointer;
+  }
+  .special-one {
+    width: 0;
+    height: 0;
+  }
+  .main-article-container {
+    width: 100%;
+    height: 3500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 1022px;
+    border: 1px solid green;
+  }
+  .main-article-container article {
+    width: 49%;
+  }
+  .main-article-container article h5 {
+    padding-top: 20px;
+    height: 40px;
+    color: #ff4422;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .main-article-container article h5:hover {
+    color: black;
+    cursor: pointer;
+  }
+  .article-top-img {
+    width: 100%;
+    height: 275px;
+    background: url(img/facebook.png);
+    background-repeat: no-repeat;
+    background-size: 92% 100%;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 15px;
+  }
+  .article-top-img h2 {
+    font-size: 14px;
+    padding-bottom: 10px;
+    font-weight: 500;
+  }
+  .article-top-img h1 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  .article-top-img h1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .article-top-img h3 {
+    font-size: 12px;
+    color: #b3b3b3;
+  }
+  .article-top-img h3:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .orange-article {
+    width: 100%;
+    height: 100px;
+    color: #ff4422;
+    background: #FFEBE8;
+  }
+  .orange-article img {
+    clear: both;
+    width: 100px;
+    height: 100px;
+    float: right;
+    cursor: pointer;
+  }
+  .orange-article h2 {
+    font-size: 13px;
+    padding: 10px;
+  }
+  .orange-article h3 {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 0;
+  }
+  .orange-article h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .article-list {
+    width: 100%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .article-list li {
+    font-size: 13px;
+    color: #555;
+    border-bottom: 1px solid lightgrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .article-list ul {
+    list-style: circle;
+    margin-left: 10px;
+  }
+  .article-list:hover {
+    color: black;
+    cursor: pointer;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    max-width: 1022px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-icons {
+    width: 100%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #131313;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .icon-container {
+    width: 50px;
+    height: 50px;
+    background: #333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 30px;
+    font-size: 25px;
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  .icon-container:hover {
+    background: black;
+    border: 3px solid #333;
+  }
+  .footer-links {
+    width: 100%;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #131313;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 13px;
+    color: #AAA;
+  }
+  .footer-links li {
+    margin-top: -20px;
+    margin-right: 20px;
+  }
+  .footer-links li:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .copyright {
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: black;
+    color: #AAA;
+    font-size: 13px;
+  }
+  .copyright span {
+    color: white;
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=style.css.map */
