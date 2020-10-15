@@ -152,4 +152,307 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.grid-title {
+  font-size: 24px;
+  color: #ff4422;
+  font-weight: 700;
+  width: 80%;
+  height: 30px;
+  margin: 10px;
+}
+
+.grid-title :hover {
+  color: black;
+  cursor: pointer;
+}
+
+.grid-container {
+  width: 90%;
+  height: 750px;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: (75px)[8];
+      grid-template-rows: repeat(8, 75px);
+  gap: 10px;
+}
+
+.grid-element {
+  width: 100%;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.grid-element img {
+  width: 75px;
+  height: 75px;
+}
+
+.grid-element h3 {
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 10px;
+  padding-top: 10px;
+  line-height: 20px;
+}
+
+.grid-element h3 span {
+  color: #AAA;
+  font-size: 12px;
+}
+
+.latest-title, .deals-title {
+  width: 80%;
+  height: 155px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 24px;
+  color: #ff4422;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 10px;
+}
+
+.latest-title h2, .deals-title h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.latest-title :hover, .deals-title :hover {
+  color: black;
+  cursor: pointer;
+}
+
+.latest-funding {
+  width: 90%;
+  height: 880px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.lf-container {
+  width: 100%;
+  height: 260px;
+  padding: 10px;
+}
+
+.lf-container img {
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.lf-container h1 {
+  font-size: 18px;
+  color: white;
+  background: #ff4422;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.lf-container h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  background: #FFEBE8;
+  line-height: 20px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.lf-container h2 span {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #b3b3b3;
+  cursor: pointer;
+}
+
+.lf-container h3 {
+  cursor: pointer;
+  font-size: 13px;
+  color: #555;
+  background: #FFF9F8;
+  line-height: 20px;
+  padding: 15px;
+  padding-top: 30px;
+  border-bottom: 1px solid #ff4422;
+}
+
+.lf-container p {
+  font-size: 12px;
+  background: #FFF9F8;
+  padding: 15px;
+  padding-top: 30px;
+  color: #555;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.special-one {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.main-article-container {
+  width: 90%;
+  height: 6330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+.main-article-container article {
+  width: 100%;
+  height: 688px;
+  margin-bottom: 10px;
+}
+
+.main-article-container article h5 {
+  padding-top: 20px;
+  height: 40px;
+  color: #ff4422;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.main-article-container article h5:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.article-top-img {
+  width: 100%;
+  height: 275px;
+  background: url(img/facebook.png);
+  background-repeat: no-repeat;
+  background-size: 92% 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 15px;
+}
+
+.article-top-img h2 {
+  font-size: 14px;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+.article-top-img h1 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.article-top-img h1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.article-top-img h3 {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+.article-top-img h3:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.orange-article {
+  width: 100%;
+  height: 100px;
+  color: #ff4422;
+  background: #FFEBE8;
+}
+
+.orange-article img {
+  clear: both;
+  width: 100px;
+  height: 100px;
+  float: right;
+  cursor: pointer;
+}
+
+.orange-article h2 {
+  font-size: 13px;
+  padding: 10px;
+}
+
+.orange-article h3 {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 0;
+}
+
+.orange-article h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.article-list {
+  width: 95%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+}
+
+.article-list li {
+  font-size: 13px;
+  color: #555;
+  border-bottom: 1px solid lightgrey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.article-list ul {
+  list-style: circle;
+  margin-left: 10px;
+}
+
+.article-list:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.deals-title {
+  height: 70px;
+}
 /*# sourceMappingURL=style.css.map */
