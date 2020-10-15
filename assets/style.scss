@@ -8,6 +8,10 @@ body {
   background: #EFEFEF;
 }
 
+main {
+  margin-left: 10px;
+}
+
 .black-nav {
   visibility: hidden;
   width: 0;
@@ -15,8 +19,8 @@ body {
 }
 
 .main-nav {
-  width: 375px;
-  max-width: 400px;
+  width: 100%;
+  max-width: 766px;
   height: 50px;
   display: flex;
   background: white;
@@ -65,7 +69,7 @@ body {
 .main-img-container {
   width:90%;
   height: 730px;
-  max-width: 500px;
+  max-width: 766px;
   display: flex;
   flex-direction: column;
   h1{
@@ -95,6 +99,7 @@ body {
 
 .big-img, .side-img {
   width: 100%;
+  max-width: 740px;
   height: 240px;
   display: flex;
   flex-direction: column;
@@ -110,7 +115,7 @@ body {
 .side-img-container {
   width: 100%;
   height: 480px;
-  max-width: 500px;
+  max-width: 766px;
   display: flex;
   flex-direction: column;
 }
@@ -129,15 +134,18 @@ body {
 }
 
 .grid-container {
-  width: 90%;
+  width: 95%;
+  max-width: 766px;
   height: 750px;
   grid-template-columns: 100%;
   grid-template-rows: repeat(8, 75px);
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .grid-element {
   width: 100%;
+  max-width: 740px;
   height: 75px;
   display: flex;
   padding: 10px;
@@ -190,7 +198,8 @@ body {
 }
 
 .latest-funding {
-  width: 90%;
+  width: 95%;
+  max-width: 740px;
   height: 880px;
   display: flex;
   flex-direction: column;
@@ -265,13 +274,15 @@ body {
 }
 
 .main-article-container {
-  width: 90%;
+  width: 95%;
+  max-width: 740px;
   height: 6330px;
   display: flex;
   flex-direction: column;
   margin: 10px;
   article {
     width: 100%;
+    max-width: 740px;
     height: 688px;
     margin-bottom: 10px;
     h5 {
@@ -290,10 +301,11 @@ body {
 
 .article-top-img {
   width: 100%;
+  max-width: 766px;
   height: 275px;
   background: url(img/facebook.png);
   background-repeat: no-repeat;
-  background-size: 92% 100%;
+  background-size: 95% 100%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -325,6 +337,7 @@ body {
 
 .orange-article {
   width: 100%;
+  max-width: 740px;
   height: 100px;
   color: $orangetitle;
   background:#FFEBE8 ;
@@ -382,6 +395,7 @@ body {
 .footer {
   display: flex;
   width: 100%;
+  max-width: 766px;
   height: 250px;
   flex-direction: column;
 }
@@ -453,5 +467,212 @@ span {
 }
 p {
   width: 70%;
+}
+}
+
+@media (min-width:767px) and (max-width:1022px) {
+  .black-nav {
+  visibility: visible;
+  display: flex;
+  width: 80%;
+  height: 30px;
+  background: black;
+  justify-content: space-between;
+  font-size: 13px;
+  color: $fontgray;
+  position: fixed;
+  margin-left: 105px;
+  top: 0;
+}
+
+.left-black-nav {
+  display: flex;
+  width: 60%;
+  height:25px ;
+  margin-top: 10px; 
+  margin-left: 10px;
+
+  ul{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  li {
+    margin-right: 10px;
+    cursor: pointer;
+    
+    &:hover { 
+      color: white;
+    }
+  }
+
+  li:first-child {
+    color: white;
+    }
+}
+
+.right-black-nav {
+  display: flex;
+  width: 40%;
+  height:25px ; 
+  margin-top: 10px; 
+  justify-content: center;
+  ul{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  li{
+    margin-right: 10px;
+    cursor: pointer;
+    &:hover { 
+      color: white;
+    }
+  }
+}
+
+.main-nav {
+  background: white;
+  width: 100%;
+  max-width: 1022px;
+  height: 50px;
+  display: flex;
+  font-size: 12px;
+  color: $fontgray;
+  position: relative;
+  position: fixed;
+  top: 30px;
+  ul {
+    visibility: visible;
+    width: 55%;
+    height: 50px;
+    display: flex;
+    margin-left: 125px;
+  }
+  li {
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer ;
+    &:hover { 
+      color: black;
+    }
+  }
+  .search-icon {
+    width: 35%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid  $fontgray;
+    cursor: pointer;
+    &:hover { 
+      color: gray;
+    }
+  }
+  .nav-bars {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .nav-logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -30px;
+    img{
+      width: 105px;
+      height: 100px;
+    }
+  }
+
+  .nav-icon {
+    width: 12%;
+    font-size: 20px;
+  }
+}
+
+.main-img-container {
+  width: 100%;
+  height: 570px;
+  margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.big-img {
+  margin-left: 10px;
+  width: 63%;
+  height: 555px;
+  background-image: url(img/India-Flag.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+  font-weight: 700;
+  opacity: 0.8;
+
+  .tnw-logo {
+    width: 50%;
+    height: 300px;
+    font-size: 115px;
+    margin: 20px; 
+  }
+
+  h1 {
+    font-size: 56px;
+    margin-top: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  p {
+    margin-left: 15px;
+    padding-right: 5px;
+    color: $fontgray;
+  }
+}
+
+.side-img-container {
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  margin-left: 10px;
+  display: flex;
+  width: 32%;
+  height: 565px;
+  flex-direction: column;
+  color: black;
+  
+}
+
+.side-img {
+  margin-bottom: 10px;
+  display: flex;
+  width: 100%;
+  height: 280px;
+  background: url(img/car.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.7;
+  padding: 15px;
+  color: white;
+  flex-direction: column;
+  justify-content: flex-end;
+  h2{
+    width: 80%;
+    font-weight: 100;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  h1 {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  p {
+    font-size: 15px;
+    color: gray;
+  }
+  
 }
 }
