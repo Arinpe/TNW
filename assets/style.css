@@ -17,7 +17,7 @@ main {
 }
 
 .main-nav {
-  width: 100%;
+  width: 95%;
   max-width: 766px;
   height: 50px;
   display: -webkit-box;
@@ -36,34 +36,35 @@ main {
   cursor: pointer;
 }
 
+.main-nav .nav-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
 .main-nav .search-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: -40px;
   border-left: 1px solid #b3b3b3;
-  padding-left: 15px;
   color: #b3b3b3;
   font-size: 20px;
 }
 
-.main-nav .nav-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 20%;
-  height: 50px;
-  cursor: pointer;
-}
-
 .main-nav .nav-bars {
   padding-left: 15px;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -601,28 +602,28 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    max-width: 1000;
+    width: 90%;
+    max-width: 917px;
     height: 30px;
     background: black;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     font-size: 13px;
     color: #b3b3b3;
     position: fixed;
     margin-left: 105px;
     top: 0;
+    left: 0;
     z-index: 1;
   }
   .left-black-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 60%;
+    width: 65%;
+    max-width: 400px;
     height: 25px;
-    margin-top: 10px;
-    margin-left: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .left-black-nav ul {
     display: -webkit-box;
@@ -647,11 +648,14 @@ main {
     display: -ms-flexbox;
     display: flex;
     width: 40%;
+    max-width: 320px;
     height: 25px;
-    margin-top: 10px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .right-black-nav ul {
     display: -webkit-box;
@@ -708,8 +712,13 @@ main {
   .main-nav li:hover {
     color: black;
   }
+  .main-nav .nav-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 110px;
+  }
   .main-nav .search-icon {
-    width: 35%;
+    width: 50%;
     font-size: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -717,13 +726,14 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-left: 30px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     border-left: 1px solid #b3b3b3;
-    cursor: pointer;
   }
   .main-nav .search-icon:hover {
+    cursor: pointer;
     color: gray;
   }
   .main-nav .nav-bars {
@@ -741,15 +751,11 @@ main {
     width: 105px;
     height: 100px;
   }
-  .main-nav .nav-icon {
-    width: 12%;
-    font-size: 20px;
-  }
   .main-img-container {
-    width: 95%;
+    width: 100%;
     height: 440px;
     max-width: 1022px;
-    margin-top: 90px;
+    margin-top: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -782,12 +788,12 @@ main {
     color: #b3b3b3;
   }
   .side-img-container {
+    width: 32%;
     font-size: 20px;
     font-weight: 700;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 32%;
     height: 440px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -802,11 +808,11 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    width: 90%;
     height: 220px;
     background: url(img/car.png);
     background-repeat: no-repeat;
-    background-size: 90% 100%;
+    background-size: 100% 100%;
     opacity: 0.7;
     padding: 15px;
     color: white;
@@ -835,6 +841,52 @@ main {
     font-size: 15px;
     color: gray;
     width: 95%;
+  }
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    max-width: 1022px;
+    height: 620px;
+    -ms-grid-columns: (32%)[3];
+        grid-template-columns: repeat(3, 32%);
+    -ms-grid-rows: (32%)[3];
+        grid-template-rows: repeat(3, 32%);
+    gap: 10px;
+  }
+  .grid-element {
+    width: 100%;
+    height: 290px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .grid-element img {
+    width: 100%;
+    height: 40%;
+    cursor: pointer;
+  }
+  .grid-element h3 {
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+    line-height: 20px;
+    margin-top: 10px;
+    padding-left: 0;
+  }
+  .grid-element h3:hover {
+    color: #ff4422;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .grid-element p {
+    font-size: 13px;
+    color: #b3b3b3;
+    padding-top: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
