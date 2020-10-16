@@ -1290,6 +1290,10 @@ header {
     margin-right: 20px;
   }
 
+  .main-nav li {
+    margin-right: 20px;
+  }
+  
   .left-black-nav li:hover {
     color: white;
   }
@@ -1352,10 +1356,6 @@ header {
     justify-content: flex-start;
     align-items: center;
     padding-left: 30px;
-  }
-
-  .main-nav li {
-    margin-right: 20px;
   }
 
   .main-nav li:hover {
