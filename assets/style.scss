@@ -33,6 +33,7 @@ header {
   background: white;
   font-size: 25px;
   justify-content: space-between;
+
   .nav-logo {
     width: 25%;
     height: 50px;
@@ -141,6 +142,7 @@ header {
   width: 50%;
   height: 30px;
   margin: 10px;
+
   :hover {
     color: black;
     cursor: pointer;
@@ -156,6 +158,77 @@ header {
   margin-bottom: 20px;
 }
 
+.copyright span {
+  color: white;
+  cursor: pointer;
+}
+
+.lf-container h2 span {
+  font-size: 12px;
+  font-family: ArialHelvetica, sans-serif;
+  font-weight: normal;
+  color: $fontgray;
+  cursor: pointer;
+}
+
+.lf-container h3 {
+  cursor: pointer;
+  font-size: 13px;
+  color: #555;
+  background: #fff9f8;
+  line-height: 20px;
+  padding: 15px;
+  padding-top: 30px;
+  border-bottom: 1px solid$orangetitle;
+}
+
+.article-top-img h3 {
+  width: 90%;
+  font-size: 12px;
+  color: $fontgray;
+
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.grid-element h3 {
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 10px;
+  padding-top: 10px;
+  line-height: 20px;
+
+  &:hover {
+    color: $orangetitle;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  span {
+    color: #aaa;
+    font-size: 12px;
+
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
+  }
+}
+
+.orange-article h3 {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 0;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
 .grid-element {
   width: 99%;
   height: 75px;
@@ -166,28 +239,6 @@ header {
     width: 75px;
     height: 75px;
     cursor: pointer;
-  }
-
-  h3 {
-    font-size: 14px;
-    font-weight: 700;
-    padding-left: 10px;
-    padding-top: 10px;
-    line-height: 20px;
-    &:hover {
-      color: $orangetitle;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-
-    span {
-      color: #aaa;
-      font-size: 12px;
-      &:hover {
-        color: black;
-        cursor: pointer;
-      }
-    }
   }
 }
 
@@ -249,25 +300,6 @@ header {
     line-height: 20px;
     padding-top: 10px;
     cursor: pointer;
-
-    span {
-      font-size: 12px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: normal;
-      color: $fontgray;
-      cursor: pointer;
-    }
-  }
-
-  h3 {
-    cursor: pointer;
-    font-size: 13px;
-    color: #555;
-    background: #fff9f8;
-    line-height: 20px;
-    padding: 15px;
-    padding-top: 30px;
-    border-bottom: 1px solid $orangetitle;
   }
 
   p {
@@ -298,6 +330,7 @@ header {
     width: 99%;
     height: 688px;
     margin-bottom: 10px;
+
     h5 {
       width: 100%;
       padding-top: 20px;
@@ -305,6 +338,7 @@ header {
       color: $orangetitle;
       font-size: 28px;
       font-weight: bold;
+
       &:hover {
         color: black;
         cursor: pointer;
@@ -336,18 +370,9 @@ header {
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 10px;
+
     &:hover {
       text-decoration: underline;
-      cursor: pointer;
-    }
-  }
-
-  h3 {
-    width: 90%;
-    font-size: 12px;
-    color: $fontgray;
-    &:hover {
-      color: white;
       cursor: pointer;
     }
   }
@@ -370,17 +395,6 @@ header {
   h2 {
     font-size: 13px;
     padding: 10px;
-  }
-
-  h3 {
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    padding-top: 0;
-    &:hover {
-      text-decoration: underline;
-      cursor: pointer;
-    }
   }
 }
 
@@ -472,6 +486,7 @@ header {
   li {
     margin-top: -20px;
     margin-right: 10px;
+
     &:hover {
       color: white;
       cursor: pointer;
@@ -490,11 +505,6 @@ header {
   font-size: 12px;
   line-height: 20px;
   text-align: center;
-
-  span {
-    color: white;
-    cursor: pointer;
-  }
 
   p {
     width: 70%;
@@ -555,6 +565,7 @@ header {
     li {
       padding-right: 10px;
       cursor: pointer;
+
       &:hover {
         color: white;
       }
@@ -586,6 +597,7 @@ header {
       justify-content: center;
       align-items: center;
       cursor: pointer;
+
       &:hover {
         color: black;
       }
@@ -603,6 +615,7 @@ header {
       justify-content: center;
       align-items: center;
       border-left: 1px solid $fontgray;
+
       &:hover {
         cursor: pointer;
         color: gray;
@@ -620,6 +633,7 @@ header {
       height: 80px;
       position: absolute;
       top: -30px;
+
       img {
         width: 105px;
         height: 80px;
@@ -656,6 +670,7 @@ header {
       margin-left: 5px;
       cursor: pointer;
     }
+
     p {
       margin-left: 5px;
       padding-right: 5px;
@@ -817,6 +832,7 @@ header {
       padding-top: 30px;
       border-bottom: 1px solid $orangetitle;
     }
+
     p {
       font-size: 12px;
       background: #fff9f8;
@@ -836,12 +852,14 @@ header {
 
     article {
       width: 49%;
+
       h5 {
         padding-top: 20px;
         height: 40px;
         color: $orangetitle;
         font-size: 28px;
         font-weight: bold;
+
         &:hover {
           color: black;
           cursor: pointer;
@@ -873,6 +891,7 @@ header {
       font-weight: bold;
       padding-bottom: 10px;
       padding: 10px;
+
       &:hover {
         text-decoration: underline;
         cursor: pointer;
@@ -883,6 +902,7 @@ header {
       font-size: 12px;
       padding: 10px;
       color: $fontgray;
+
       &:hover {
         color: white;
         cursor: pointer;
@@ -914,6 +934,7 @@ header {
       font-size: 14px;
       font-weight: bold;
       padding-top: 0;
+
       &:hover {
         text-decoration: underline;
         cursor: pointer;
@@ -969,6 +990,7 @@ header {
     margin-right: 20px;
     color: white;
     cursor: pointer;
+
     &:hover {
       background: black;
       border: 3px solid #333;
@@ -992,6 +1014,7 @@ header {
     li {
       margin-top: -20px;
       margin-right: 20px;
+
       &:hover {
         color: white;
         cursor: pointer;
@@ -1072,6 +1095,7 @@ header {
     li {
       padding-right: 10px;
       cursor: pointer;
+
       &:hover {
         color: white;
       }
@@ -1104,6 +1128,7 @@ header {
       justify-content: center;
       align-items: center;
       cursor: pointer;
+
       &:hover {
         color: black;
       }
@@ -1123,6 +1148,7 @@ header {
       align-items: center;
       border-left: 1px solid $fontgray;
       padding-left: 20px;
+
       &:hover {
         cursor: pointer;
         color: gray;
@@ -1240,6 +1266,7 @@ header {
     color: $orangetitle;
     font-weight: bold;
     margin-bottom: 20px;
+
     &:hover {
       color: black;
       cursor: pointer;
@@ -1275,6 +1302,7 @@ header {
       padding-top: 10px;
       line-height: 20px;
       margin-top: 10px;
+
       &:hover {
         color: $orangetitle;
         text-decoration: underline;
@@ -1311,6 +1339,7 @@ header {
       display: flex;
       justify-content: flex-end;
     }
+
     &:hover {
       color: black;
       cursor: pointer;
@@ -1333,6 +1362,7 @@ header {
     width: 21.5%;
     height: 270px;
     padding: 0;
+
     img {
       float: left;
       margin: 10px;
@@ -1416,6 +1446,7 @@ header {
         color: $orangetitle;
         font-size: 28px;
         font-weight: bold;
+
         &:hover {
           color: black;
           cursor: pointer;
@@ -1446,6 +1477,7 @@ header {
       font-size: 20px;
       font-weight: bold;
       padding-bottom: 10px;
+
       &:hover {
         text-decoration: underline;
         cursor: pointer;
@@ -1455,6 +1487,7 @@ header {
     h3 {
       font-size: 12px;
       color: $fontgray;
+
       &:hover {
         color: white;
         cursor: pointer;
@@ -1486,6 +1519,7 @@ header {
       font-size: 14px;
       font-weight: bold;
       padding-top: 0;
+
       &:hover {
         text-decoration: underline;
         cursor: pointer;
@@ -1546,6 +1580,7 @@ header {
     margin-right: 20px;
     color: white;
     cursor: pointer;
+
     &:hover {
       background: black;
       border: 3px solid #333;
@@ -1565,10 +1600,11 @@ header {
       font-size: 13px;
       color: #aaa;
     }
-    
+
     li {
       margin-top: -20px;
       margin-right: 20px;
+
       &:hover {
         color: white;
         cursor: pointer;
