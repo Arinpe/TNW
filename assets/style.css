@@ -60,6 +60,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -379,6 +380,7 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding: 15px;
 }
 
 .article-top-img h2 {
@@ -487,12 +489,13 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 99%;
+  width: 100%;
   height: 250px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #131313;
 }
 
 .footer-icons {
@@ -777,7 +780,7 @@ header {
     color: #b3b3b3;
   }
   .side-img-container {
-    width: 32%;
+    width: 30%;
     font-size: 20px;
     font-weight: 700;
     display: -webkit-box;
@@ -797,13 +800,12 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 90%;
+    width: 100%;
     height: 220px;
     background: url(img/car.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     opacity: 0.7;
-    padding: 15px;
     color: white;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -886,11 +888,13 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding: 0;
+    margin: 0 auto;
   }
   .lf-container {
-    width: 33%;
+    width: 31%;
     height: 270px;
-    padding: 10px;
+    padding: 5px;
   }
   .lf-container img {
     float: left;
@@ -981,6 +985,7 @@ header {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    padding: 0;
   }
   .article-top-img h2 {
     font-size: 14px;
@@ -1557,19 +1562,21 @@ header {
     visibility: visible;
   }
   .main-article-container {
-    width: 80%;
-    height: 2200px;
+    width: 90%;
+    height: 2400px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (30%)[3];
-        grid-template-columns: repeat(3, 30%);
-    -ms-grid-rows: (30%)[3];
-        grid-template-rows: repeat(3, 30%);
-    margin-left: 150px;
-    gap: 40px;
+    -ms-grid-columns: (33%)[3];
+        grid-template-columns: repeat(3, 33%);
+    -ms-grid-rows: (33%)[3];
+        grid-template-rows: repeat(3, 33%);
+    margin: 0 auto;
+    gap: 20px;
+    line-height: 20px;
   }
   .main-article-container article {
     width: 100%;
+    margin-bottom: 30px;
   }
   .main-article-container article h5 {
     padding-top: 20px;
