@@ -11,12 +11,6 @@ main {
   margin-left: 10px;
 }
 
-header {
-  width: 100%;
-  height: 80px;
-  margin: 0;
-}
-
 .black-nav {
   visibility: hidden;
   width: 0;
@@ -34,6 +28,9 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 .main-nav .nav-logo {
@@ -102,6 +99,7 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-top: 50px;
 }
 
 .main-img-container h1 {
@@ -152,7 +150,6 @@ header {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .side-img-container {
@@ -183,7 +180,7 @@ header {
 
 .grid-container {
   width: 95%;
-  height: 750px;
+  height: 700px;
   -ms-grid-columns: 100%;
   grid-template-columns: 100%;
   -ms-grid-rows: (75px);
@@ -198,7 +195,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
 }
 
 .grid-element img {
@@ -219,6 +218,7 @@ header {
   width: 90%;
   font-size: 12px;
   color: #b3b3b3;
+  padding: 10px;
 }
 
 .orange-article h3 {
@@ -294,7 +294,7 @@ header {
 
 .latest-funding {
   width: 95%;
-  height: 880px;
+  height: 850px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,7 +306,7 @@ header {
 
 .lf-container {
   width: 100%;
-  height: 260px;
+  height: 250px;
   padding: 10px;
 }
 
@@ -355,7 +355,7 @@ header {
 
 .main-article-container {
   width: 99%;
-  height: 6330px;
+  height: 5900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,7 +367,7 @@ header {
 
 .main-article-container article {
   width: 99%;
-  height: 688px;
+  height: 648px;
   margin-bottom: 10px;
 }
 
@@ -407,6 +407,7 @@ header {
 .article-top-img h2 {
   width: 90%;
   font-size: 14px;
+  padding: 10px;
   padding-bottom: 10px;
   font-weight: 500;
 }
@@ -415,7 +416,7 @@ header {
   width: 90%;
   font-size: 20px;
   font-weight: bold;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 
 .article-top-img h1:hover {
@@ -797,7 +798,7 @@ header {
   .main-img-container {
     width: 100%;
     height: 440px;
-    margin-top: 60px;
+    margin-top: 90px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -870,6 +871,7 @@ header {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    margin-top: 0;
   }
 
   .side-img h2 {
@@ -964,6 +966,44 @@ header {
     padding-top: 10px;
   }
 
+  .latest-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    font-size: 28px;
+    margin: 0 auto;
+    color: #f42;
+    font-weight: bold;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .latest-title h1 {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .latest-title h2 {
+    font-size: 16px;
+    font-weight: normal;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+
+  .latest-title h2::after {
+    content: "|";
+    color: #f42;
+    padding-left: 10px;
+  }
+
   .latest-funding {
     width: 100%;
     height: 300px;
@@ -1029,7 +1069,7 @@ header {
 
   .main-article-container {
     width: 100%;
-    height: 3500px;
+    height: 3300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1243,9 +1283,9 @@ header {
     background: black;
     font-size: 13px;
     color: #b3b3b3;
-    position: fixed;
+    position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
   }
 
   .left-black-nav {
@@ -1332,14 +1372,13 @@ header {
   .main-nav {
     background: white;
     width: 100%;
-    height: 50px;
+    height: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 12px;
     color: #b3b3b3;
     position: fixed;
-    top: 30px;
     z-index: 1;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -1355,7 +1394,8 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 10px;
+    padding-top: 30px;
   }
 
   .main-nav li:hover {
@@ -1366,6 +1406,7 @@ header {
     width: 50px;
     height: 50px;
     margin-left: 320px;
+    padding-top: 30px;
   }
 
   .main-nav .search-icon {
@@ -1398,19 +1439,20 @@ header {
   .main-nav .nav-logo {
     width: 100px;
     height: 50px;
+    display: none;
   }
 
   .main-img-container {
     width: 100%;
     height: 550px;
     margin: 0 auto;
-    margin-top: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     color: white;
+    margin-top: 50px;
   }
 
   .big-img {
@@ -1505,7 +1547,7 @@ header {
   }
 
   .grid-title {
-    width: 90%;
+    width: 88%;
     height: 30px;
     font-size: 28px;
     margin: 0 auto;
@@ -1610,7 +1652,7 @@ header {
 
   .latest-title h1,
   .deals-title h1 {
-    width: 70%;
+    width: 60%;
   }
 
   .latest-title h2,
@@ -1623,7 +1665,15 @@ header {
     display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: flex-end;
+    justify-content: center;
+    padding-left: 10px;
+  }
+
+  .latest-title h2::after,
+  .deals-title h2::after {
+    content: "|";
+    color: #f42;
+    padding-left: 25px;
   }
 
   .latest-title:hover,
@@ -1632,12 +1682,31 @@ header {
     cursor: pointer;
   }
 
+  #spec-title {
+    padding-left: 10px;
+  }
+
   #spec {
     width: 10%;
+    margin-left: 20px;
+  }
+
+  #spec::after {
+    content: " ";
+  }
+
+  #specc {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 120px;
+  }
+
+  #specc::after {
+    content: "";
   }
 
   .latest-funding {
-    width: 85%;
+    width: 90%;
     height: 300px;
     margin: 0 auto;
     display: -webkit-box;
@@ -1711,7 +1780,7 @@ header {
 
   .main-article-container {
     width: 90%;
-    height: 2400px;
+    height: 2550px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (33%) [3];
