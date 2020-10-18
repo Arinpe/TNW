@@ -930,6 +930,10 @@ main {
     padding-left: 0;
   }
 
+  #spec::after {
+    content: " ";
+  }
+  
   .lf-container h3 {
     cursor: pointer;
     font-size: 13px;
