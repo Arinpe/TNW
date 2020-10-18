@@ -27,7 +27,7 @@ In this project, we would be working on a clone of TNW and making it responsive 
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/Arinpe/TNW/3f44de1f5118a31f463a1318ce6dbb8637a650d4/index.html)
+[Live Demo Link](https://rawcdn.githack.com/Arinpe/TNW/86c42e85ad7501dee70ff3e04a4c947955944f67/index.html)
 
 **See the page via the link above**
 
